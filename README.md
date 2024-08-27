@@ -3,8 +3,8 @@
 ## Table of Contents
 1. [API Overview](#api-overview)
 2. [Endpoints](#endpoints)
-    - [Get Current Price](#get-current-price)
-    - [Get Customer Account](#get-customer-account)
+    - [Get Current Price](#/Endpoints/get-current-price)
+    - [Get Customer Account](#/Endpoints/get-customer-account)
 3. [Response Codes](#response-codes)
 4. [Notes](#notes)
 
