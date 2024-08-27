@@ -62,13 +62,20 @@
             "ProductFormatted": "Heating Oil", 
             "TankId": 1222442
         }
-     ]
+     ], 
+     "Error": ""
     }
     ```
   - 
   ##### Response Type
 
   - `CustomerNumber` (integer | null)(nullable): If found, customer number. Can be Null. Null = not found. 
+  - `Contact` (array of objects):
+    - `ContactLocationId` (integer)(nullable): Unique identifier to indicate a Contact's location 
+    - `FirstName` (string): First Name of contact
+    - `LastName` (string): Last Name of contact
+    - `PhoneNumber` (string): Contact Phone Number
+    - `EmailAddress` (string)(nullable):  Contact Email Address
   - `BillingAddress` (object)
     - `LocationId` (integer): Unique identifier to indicate a location
     - `BillingStreet1` (string)
@@ -77,11 +84,19 @@
     - `BillingState` (string)
     - `BillingZipCode` (string)  
   - `ServiceAddress` (array of objects)
+    - `LocationId` (integer): Location Id to indicate which location this belongs to 
+    - `ServiceStreet1` (string) 
+    - `ServiceStreet2` (string)(nullable) 
+    - `ServiceCity` (string) 
+    - `ServiceState` (string) 
+    - `ServiceZipCode` (string) 
+   - `Equipment` (array of objects)
+    - `EquipmentId` (integer)" "
+    - `LocationId` (integer)
+    - `ProductId` (integer)
+    - `ProductFormatted` (string)
+    - `TankSize` (integer)
 
-
-
-
-    
 - **Error**:
   - **Format**: JSON
   - **Example**:
