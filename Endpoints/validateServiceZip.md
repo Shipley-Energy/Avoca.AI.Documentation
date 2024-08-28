@@ -15,7 +15,7 @@
     ```json
     {
       "BrandType": 4,
-      "ZipCode": 17403"
+      "ZipCode": 17403
     }
     ```
 
