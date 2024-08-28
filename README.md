@@ -5,6 +5,9 @@
 2. [Endpoints](#endpoints)
     - [Get Current Price](Endpoints/getCurrentPrice.md#get-current-price)
     - [Get Customer Account](Endpoints/getCustomerAccount.md#get-customer-account)
+    - [Validate Service Zip](Endpoints/validateServiceZip.md#validate-service-zip-code)
+    - [Get Accept.js Token](Endpoints/getAcceptJsToken.md#get-acceptjs-token)
+    - [Submit Order](Endpoints/submitOrder.md#submit-order)
 3. [Response Codes](#response-codes)
 4. [Notes](#notes)
 
