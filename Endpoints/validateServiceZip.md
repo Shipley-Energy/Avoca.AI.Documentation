@@ -25,7 +25,7 @@
   - **Example**:
     ```json
     {
-      "Successful": true"
+      "Successful": true
       "Message": ""
     }
     ```

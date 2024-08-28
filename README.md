@@ -6,7 +6,8 @@
     - [Get Current Price](Endpoints/getCurrentPrice.md#get-current-price)
     - [Get Customer Account](Endpoints/getCustomerAccount.md#get-customer-account)
     - [Validate Service Zip](Endpoints/validateServiceZip.md#validate-service-zip-code)
-    - [Get Accept.js Token](Endpoints/getAcceptJsToken.md#get-acceptjs-token)
+    - [Get Payment Token](Endpoints/getPaymentToken.md#get-payment-token)
+    - [Get Order Details](Endpoints/getOrderDetails.md#get-order-details)
     - [Submit Order](Endpoints/submitOrder.md#submit-order)
 3. [Response Codes](#response-codes)
 4. [Notes](#notes)
@@ -22,4 +23,4 @@ Provide a general overview of the API, including its purpose and any important d
 
 ## Notes
 - Ensure the API key is valid and included in the header.
-- The `BrandType` and `ProductId` must match the allowed values in the system.
+- The `BrandType` is the current Brand for the Order.
