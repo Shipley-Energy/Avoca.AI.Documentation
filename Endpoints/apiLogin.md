@@ -30,7 +30,8 @@
   - `401 Unauthorized`: API key is missing or invalid.
 
 #### Parameters
-- `BrandType` (integer): The brand type of the product.
+- `UserName` (string): The username for the API.
+- `Password` (string): The password for the API.
 
 #### Response
 - (string): API Key associated with the provided username and password. This will be used for the `X-Api-Key` header in subsequent requests for a given session.
