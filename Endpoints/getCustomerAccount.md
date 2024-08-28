@@ -64,16 +64,16 @@
         }
      ], 
      "CustomerPaymentProfile": {
-		"CustomerProfileId": 55555551,
+        "CustomerProfileId": 55555551,
         "PaymentProfile": [
-		    {
+	        {
                 "PaymentProfileId": 92929292,
-			    "PaymentProfileType": "Credit Card", 
-			    "PaymentProfileName": "Visa", 
-			    "PaymentProfileNumber": "************1234",
+		        "PaymentProfileType": "Credit Card", 
+		        "PaymentProfileName": "Visa", 
+		        "PaymentProfileNumber": "************1234",
                 "PaymentProfileLast4": "1234", 
-			    "PaymentProfileExpiration": "12/2022"
-		    }
+		        "PaymentProfileExpiration": "12/2022"
+	        }
         ],
 	},
      "Error": ""

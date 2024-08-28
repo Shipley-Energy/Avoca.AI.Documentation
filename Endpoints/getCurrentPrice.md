@@ -26,6 +26,7 @@
     ```json
     {
       "Price": 3.455,
+      "PricePlanId": 855,
       "Currency": "USD",
       "MinimumGallonsAllowed": 100,
       "AssociatedFees": [
@@ -64,6 +65,7 @@
 
 #### Response
 - `Price` (float)(nullable): The current price of the product. Will be null if tiered pricing is available.
+- `PricePlanId` (integer): The ID of the price plan.
 - `Currency` (string): The currency of the price.
 - `MinimumGallonsAllowed` (integer): The minimum number of gallons allowed for the product.
 - `AssociatedFees` (array): An array of associated fees. Empty array if no fees exist.

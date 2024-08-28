@@ -3,6 +3,7 @@
 ## Table of Contents
 1. [API Overview](#api-overview)
 2. [Endpoints](#endpoints)
+    - [Api Login](Endpoints/apiLogin.md#api-login)
     - [Get Current Price](Endpoints/getCurrentPrice.md#get-current-price)
     - [Get Customer Account](Endpoints/getCustomerAccount.md#get-customer-account)
     - [Validate Service Zip](Endpoints/validateServiceZip.md#validate-service-zip-code)
@@ -22,5 +23,6 @@ Provide a general overview of the API, including its purpose and any important d
 - `500 Internal Server Error`: An error occurred on the server.
 
 ## Notes
+- **Api Login must be called before any other endpoint. The APIKey will be used in the header for all other requests.**
 - Ensure the API key is valid and included in the header.
 - The `BrandType` is the current Brand for the Order.
