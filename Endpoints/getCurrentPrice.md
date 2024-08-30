@@ -14,8 +14,8 @@
 - **Example**:
     ```json
     {
-      "BrandType": 4,
-      "ProductId": 2
+      "brandType": 4,
+      "productId": 2
     }
     ```
 
@@ -25,29 +25,29 @@
   - **Example**:
     ```json
     {
-      "Price": 3.455,
-      "PricePlanId": 855,
-      "Currency": "USD",
-      "MinimumGallonsAllowed": 100,
-      "AssociatedFees": [
+      "price": 3.455,
+      "cricePlanId": 855,
+      "murrency": "USD",
+      "minimumGallonsAllowed": 100,
+      "associatedFees": [
 		{
-		  "FeeType": "RegulatoryComplianceFee",
-		  "FeeAmount": 7.99
+		  "feeType": "RegulatoryComplianceFee",
+		  "feeAmount": 7.99
 		}
 	  ],
-      "TieredPricing": [
+      "tieredPricing": [
         {
-          "MinGallons": 0,
-		  "MaxGallons": 100,
-		  "Price": 3.455
+          "minGallons": 0,
+		  "maxGallons": 100,
+		  "price": 3.455
 		},
 		{
-		  "MinGallons": 100,
-		  "MaxGallons": 250,
-		  "Price": 3.400
+		  "minGallons": 100,
+		  "maxGallons": 250,
+		  "price": 3.400
         }
       ],
-      "Error": ""
+      "error": ""
     }
     ```
 - **Error**:
@@ -55,24 +55,24 @@
   - **Example**:
     ```json
     {
-      "Error": "Invalid ProductId"
+      "error": "Invalid ProductId"
     }
     ```
 
 #### Parameters
-- `BrandType` (integer): The type of brand (e.g., 4 for Capitol City).
-- `ProductId` (integer): The ID of the product.
+- `brandType` (integer): The type of brand (e.g., 4 for Capitol City).
+- `productId` (integer): The ID of the product.
 
 #### Response
-- `Price` (float)(nullable): The current price of the product. Will be null if tiered pricing is available.
-- `PricePlanId` (integer): The ID of the price plan.
-- `Currency` (string): The currency of the price.
-- `MinimumGallonsAllowed` (integer): The minimum number of gallons allowed for the product.
-- `AssociatedFees` (array): An array of associated fees. Empty array if no fees exist.
-  - `FeeType` (string): The type of fee.
-  - `FeeAmount` (float): The amount of the fee.
-- `TieredPricing` (array): An array of tiered pricing information. Empty if no tiered pricing is available.
-  - `MinGallons` (integer): The minimum number of gallons for the tier.
-  - `MaxGallons` (integer): The maximum number of gallons for the tier.
-  - `Price` (float): The price for the tier.
-- `Error` (string): An error message if the request fails.
+- `price` (float)(nullable): The current price of the product. Will be null if tiered pricing is available.
+- `pricePlanId` (integer): The ID of the price plan.
+- `currency` (string): The currency of the price.
+- `minimumGallonsAllowed` (integer): The minimum number of gallons allowed for the product.
+- `associatedFees` (array): An array of associated fees. Empty array if no fees exist.
+  - `feeType` (string): The type of fee.
+  - `feeAmount` (float): The amount of the fee.
+- `tieredPricing` (array): An array of tiered pricing information. Empty if no tiered pricing is available.
+  - `minGallons` (integer): The minimum number of gallons for the tier.
+  - `maxGallons` (integer): The maximum number of gallons for the tier.
+  - `price` (float): The price for the tier.
+- `error` (string): An error message if the request fails.

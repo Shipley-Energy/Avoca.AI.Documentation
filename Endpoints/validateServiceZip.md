@@ -14,8 +14,8 @@
 - **Example**:
     ```json
     {
-      "BrandType": 4,
-      "ZipCode": 17403
+      "brandType": 4,
+      "zipCode": 17403
     }
     ```
 
@@ -25,8 +25,8 @@
   - **Example**:
     ```json
     {
-      "Successful": true
-      "Message": ""
+      "successful": true
+      "message": ""
     }
     ```
 - **Error**:
@@ -34,15 +34,15 @@
   - **Example**:
     ```json
     {
-      "Successful": false,
-      "Message": "{BrandType} does not service Zip Code {ZipCode}"
+      "successful": false,
+      "message": "{BrandType} does not service Zip Code {ZipCode}"
     }
     ```
 
 #### Parameters
-- `BrandType` (integer): The brand type of the product.
-- `ZipCode` (string): The zip code to check.
+- `brandType` (integer): The brand type of the product.
+- `zipCode` (string): The zip code to check.
 
 #### Response
-- `Successful` (boolean): Indicates if the request was successful and the zip code provided is serviceable for the Brand.
-- `Message` (string): An error message if the request fails.
+- `successful` (boolean): Indicates if the request was successful and the zip code provided is serviceable for the Brand.
+- `message` (string): An error message if the request fails.

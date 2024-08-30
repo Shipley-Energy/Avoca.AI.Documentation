@@ -15,10 +15,10 @@
 - **Example**:
     ```json
     {
-      "BrandType": 4,
-      "ProductId": 2,
-      "Gallons": 100,
-      "PromoCode": "SHIPLEY123",
+      "brandType": 4,
+      "productId": 2,
+      "gallons": 100,
+      "promoCode": "SHIPLEY123",
     }
     ```
 
@@ -28,30 +28,30 @@
   - **Example**:
     ```json
     {
-      "OrderTotal": 343.49,
-      "OrderTotalPreDiscount": 352.99,
-      "PricePerGallon": 3.455,
-      "OrderItems": [
+      "orderTotal": 343.49,
+      "orderTotalPreDiscount": 352.99,
+      "pricePerGallon": 3.455,
+      "orderItems": [
 		{
-		  "ItemName": "HeatingOil",
-          "ItemId": 2,
-		  "ItemDescription": "100 Gallons of Heating Oil",
-		  "ItemPrice": 345.50
+		  "itemName": "HeatingOil",
+          "itemId": 2,
+		  "itemDescription": "100 Gallons of Heating Oil",
+		  "itemPrice": 345.50
 		}, {
-          "ItemName": "RegulatoryComplianceFee",
-          "ItemId": 1552,
-		  "ItemDescription": "RegulatoryComplianceFee",
-		  "ItemPrice": 7.99
+          "itemName": "RegulatoryComplianceFee",
+          "itemId": 1552,
+		  "itemDescription": "RegulatoryComplianceFee",
+		  "itemPrice": 7.99
         }
 	  ],
-      "PromoDiscount": [
+      "promoDiscount": [
 		{
-		  "PromoCode": "SHIPLEY123",
-		  "DiscountOffTotal": 0,
-          "DiscountOffPerGallon": 0.10
+		  "promoCode": "SHIPLEY123",
+		  "discountOffTotal": 0,
+          "discountOffPerGallon": 0.10
 		}
 	  ],
-      "Error": ""
+      "error": ""
     }
     ```
 - **Error**:
@@ -59,32 +59,32 @@
   - **Example**:
     ```json
     {
-      "OrderTotal": 0,
-      "OrderTotalPreDiscount": 0,
-      "PricePerGallon": 0,
-      "OrderItems": [],
-      "PromoDiscount": [],
-      "Error": "Unable to complete request"
+      "orderTotal": 0,
+      "orderTotalPreDiscount": 0,
+      "pricePerGallon": 0,
+      "orderItems": [],
+      "promoDiscount": [],
+      "error": "Unable to complete request"
     }
     ```
 
 #### Parameters
-- `BrandType` (integer): The type of brand (e.g., 4 for Capitol City).
-- `ProductId` (integer): The ID of the product.
-- `Gallons` (integer): The number of gallons to order.
-- `PromoCode` (string)(nullable): The promo code to apply to the order.
+- `brandType` (integer): The type of brand (e.g., 4 for Capitol City).
+- `productId` (integer): The ID of the product.
+- `gallons` (integer): The number of gallons to order.
+- `promoCode` (string)(nullable): The promo code to apply to the order.
 
 #### Response
-- `OrderTotal` (float): The total cost of the order.
-- `OrderTotalPreDiscount` (float): The total cost of the order before any discounts.
-- `PricePerGallon` (float): The price per gallon.
-- `OrderItems` (array): An array of items in the order.
-  - `ItemName` (string): The name of the item.
-  - `ItemId` (integer): The ID of the item.
-  - `ItemDescription` (string): A description of the item.
-  - `ItemPrice` (float): The price of the item.
-- `PromoDiscount` (array): An array of discounts applied to the order. Empty array if no discounts applied.
-  - `PromoCode` (string): The promo code applied.
-  - `DiscountOffTotal` (float): The discount off the total order.
-  - `DiscountOffPerGallon` (float): The discount off per gallon.
-- `Error` (string): An error message if the request fails.
+- `orderTotal` (float): The total cost of the order.
+- `orderTotalPreDiscount` (float): The total cost of the order before any discounts.
+- `pricePerGallon` (float): The price per gallon.
+- `orderItems` (array): An array of items in the order.
+  - `itemName` (string): The name of the item.
+  - `itemId` (integer): The ID of the item.
+  - `itemDescription` (string): A description of the item.
+  - `itemPrice` (float): The price of the item.
+- `promoDiscount` (array): An array of discounts applied to the order. Empty array if no discounts applied.
+  - `promoCode` (string): The promo code applied.
+  - `discountOffTotal` (float): The discount off the total order.
+  - `discountOffPerGallon` (float): The discount off per gallon.
+- `error` (string): An error message if the request fails.
