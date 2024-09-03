@@ -28,7 +28,7 @@
       "publicClientKey": "a309f2e8-ba25-43f1-8a92-1057eaee8482", 
       "apiLoginId": "8ZP3u95bFcc",
       "remoteJsUrl": "https://jstest.authorize.net/v1/Accept.js",
-      "rrror": ""
+      "error": ""
     }
     ```
 - **Error**:

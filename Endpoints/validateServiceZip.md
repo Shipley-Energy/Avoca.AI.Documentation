@@ -15,7 +15,8 @@
     ```json
     {
       "brandType": 4,
-      "zipCode": 17403
+      "zipCode": 17403, 
+      "productId": 2"
     }
     ```
 
@@ -42,6 +43,7 @@
 #### Parameters
 - `brandType` (integer): The brand type of the product.
 - `zipCode` (string): The zip code to check.
+- `productId` (integer): The product ID.
 
 #### Response
 - `successful` (boolean): Indicates if the request was successful and the zip code provided is serviceable for the Brand.

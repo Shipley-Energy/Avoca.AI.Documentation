@@ -5,7 +5,7 @@
 2. [Endpoints](#endpoints)
     - [Api Login](Endpoints/apiLogin.md#api-login)
     - [Get Current Price](Endpoints/getCurrentPrice.md#get-current-price)
-    - [Get Customer Account](Endpoints/getCustomerAccount.md#get-customer-account)
+    - [Find Customer Account](Endpoints/findCustomerAccount.md#find-customer-account)
     - [Validate Service Zip](Endpoints/validateServiceZip.md#validate-service-zip-code)
     - [Get Payment Token](Endpoints/getPaymentToken.md#get-payment-token)
     - [Get Order Details](Endpoints/getOrderDetails.md#get-order-details)

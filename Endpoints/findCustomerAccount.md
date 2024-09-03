@@ -1,6 +1,6 @@
-### Get Customer Account 
+### Find Customer Account 
 - **API URL Prefix**: `https://shipleyenergy.com/api/v1.0/Order`
-- **Endpoint**: `/get-customer-account`
+- **Endpoint**: `/find-customer-account`
 - **Method**: `POST`
 - **Description**: Retrieves the customer account information. If no customer is found, `CustomerNumber` will be null.
 
@@ -13,6 +13,7 @@
 - **Example**:
     ```json
     {
+      "brandType": 4,
       "phoneNumber": "7177777777",
       "firstName": "Bob", 
       "lastName": "Jones", 
@@ -27,6 +28,7 @@
     ```json
     {
       "customerNumber": 7577482, 
+      "brandType": 4,
       "contacts": [
         {
             "contactLocationId": 1442552,
@@ -37,21 +39,23 @@
          }
       ],
       "billingAddress": {
-        "locationId": 1442552,
-        "billingStreet1": "123 Street Road", 
-        "billingStreet2" : "", 
-        "billingCity": "York",
-        "billingState": "PA", 
-        "billingZipCode": 17403
+        "addressId": 1442552,
+        "street1": "123 Street Road", 
+        "street2" : "", 
+        "city": "York",
+        "state": "PA", 
+        "zip": 17403, 
+        "addressType": 3
       },
-      "serviceAddress": [
+      "deliveryAddress": [
         {
-            "locationId": 555454, 
-            "serviceStreet1": "456 Street Road", 
-            "serviceStreet2" : "Apt 2", 
-            "serviceCity": "York",
-            "serviceState": "PA", 
-            "serviceZipCode": 17403
+            "addressId": 555454, 
+            "street1": "456 Street Road", 
+            "street2" : "Apt 2", 
+            "city": "York",
+            "state": "PA", 
+            "zip": 17403,
+            "addressType": 4
         }
       ],
      "equipment": [
@@ -107,19 +111,21 @@
     - `phoneNumber` (string): Contact Phone Number
     - `emailAddress` (string)(nullable):  Contact Email Address
   - `billingAddress` (object): Empty Object if none found
-    - `locationId` (integer): Unique identifier to indicate a location
-    - `billingStreet1` (string)
-    - `billingStreet2` (string)
-    - `billingCity` (string)
-    - `billingState` (string)
-    - `billingZipCode` (string)  
-  - `serviceAddress` (array of objects): Empty Array if none found
-    - `locationId` (integer): Location Id to indicate which location this belongs to 
-    - `serviceStreet1` (string) 
-    - `serviceStreet2` (string)(nullable) 
-    - `serviceCity` (string) 
-    - `serviceState` (string) 
-    - `serviceZipCode` (string) 
+    - `addressId` (integer): Unique identifier to indicate a Billing Address
+    - `street1` (string)
+    - `street2` (string)
+    - `city` (string)
+    - `state` (string)
+    - `zipCode` (string)
+    - `addressType` (integer): 3 = Billing Address
+  - `deliveryAddress` (array of objects): Empty Array if none found
+    - `addressId` (integer): Location Id to indicate which location this belongs to 
+    - `street1` (string)
+    - `street2` (string)
+    - `city` (string)
+    - `state` (string)
+    - `zipCode` (string)  
+    - `addressType` (integer): 4 = Delivery Address
    - `equipment` (array of objects): Empty Array if none found
     - `equipmentId` (integer)
     - `locationId` (integer)
