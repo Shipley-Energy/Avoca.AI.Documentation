@@ -13,35 +13,35 @@
 #### Request Body
 - **Format**: JSON
 - **Example**:
-    ```json
-    {
-      "brandType": 4,
-    }
-    ```
+```json
+{
+    "brandType": 4,
+}
+```
 
 #### Response
 - **Success**:
   - **Format**: JSON
   - **Example**:
-    ```json
-    {
-      "publicClientKey": "a309f2e8-ba25-43f1-8a92-1057eaee8482", 
-      "apiLoginId": "8ZP3u95bFcc",
-      "remoteJsUrl": "https://jstest.authorize.net/v1/Accept.js",
-      "error": ""
-    }
-    ```
+```json
+{
+    "publicClientKey": "a309f2e8-ba25-43f1-8a92-1057eaee8482", 
+    "apiLoginId": "8ZP3u95bFcc",
+    "remoteJsUrl": "https://jstest.authorize.net/v1/Accept.js",
+    "error": ""
+}
+```
 - **Error**:
   - **Format**: JSON
   - **Example**:
-    ```json
-    {
-      "publicClientKey": "",
-      "apiLoginId": "",
-      "remoteJsUrl": "",
-      "error": "{BrandType} does not service Zip Code {ZipCode}"
-    }
-    ```
+```json
+{
+    "publicClientKey": "",
+    "apiLoginId": "",
+    "remoteJsUrl": "",
+    "error": "{BrandType} does not service Zip Code {ZipCode}"
+}
+```
 
 #### Parameters
 - `brandType` (integer): The brand type of the product.

@@ -11,34 +11,34 @@
 #### Request Body
 - **Format**: JSON
 - **Example**:
-    ```json
-    {
-      "brandType": 4,
-      "phoneNumber": "7177777777",
-      "firstName": "Bob", 
-      "lastName": "Jones", 
-      "emailAddress": "email@address.com"
-    }
-    ```
+```json
+{
+    "brandType": 4,
+    "phoneNumber": "7177777777",
+    "firstName": "Bob", 
+    "lastName": "Jones", 
+    "emailAddress": "email@address.com"
+}
+```
 
 #### Response
 - **Success**:
   - **Format**: JSON
   - **Example**:
-    ```json
-    {
-      "customerNumber": 7577482, 
-      "brandType": 4,
-      "contacts": [
+```json
+{
+    "customerNumber": 7577482, 
+    "brandType": 4,
+    "contacts": [
         {
             "contactLocationId": 1442552,
             "firstName": "Bob", 
             "lastName": "Jones",
             "phoneNumber": "7177777777",
             "emailAddress": "email@address.com"
-         }
-      ],
-      "billingAddress": {
+        }
+    ],
+    "billingAddress": {
         "addressId": 1442552,
         "street1": "123 Street Road", 
         "street2" : "", 
@@ -46,8 +46,8 @@
         "state": "PA", 
         "zip": 17403, 
         "addressType": 3
-      },
-      "deliveryAddress": [
+    },
+    "deliveryAddress": [
         {
             "addressId": 555454, 
             "street1": "456 Street Road", 
@@ -57,8 +57,8 @@
             "zip": 17403,
             "addressType": 4
         }
-      ],
-     "equipment": [
+    ],
+    "equipment": [
         {
             "equipmentId": 1555555,
             "locationId": 555454, 
@@ -66,32 +66,31 @@
             "productFormatted": "Heating Oil", 
             "tankId": 1222442
         }
-     ], 
-     "customerPaymentProfile": {
-        "customerProfileId": 55555551,
-        "paymentProfile": [
-	        {
-                "paymentProfileId": 92929292,
-		        "paymentProfileType": "Credit Card", 
-		        "paymentProfileName": "Visa", 
-		        "paymentProfileNumber": "************1234",
-                "paymentProfileLast4": "1234", 
-		        "paymentProfileExpiration": "12/2022"
-	        }
-        ],
-	},
-     "error": ""
-    }
-    ```
+    ], 
+    "customerPaymentProfile": {
+    "customerProfileId": 55555551,
+    "paymentProfile": [
+	    {
+            "paymentProfileId": 92929292,
+		    "paymentProfileType": "Credit Card", 
+		    "paymentProfileName": "Visa", 
+		    "paymentProfileNumber": "************1234",
+            "paymentProfileLast4": "1234", 
+		    "paymentProfileExpiration": "12/2022"
+	    }
+    ],
+    "error": ""
+}
+```
   
 - **Error**:
   - **Format**: JSON
   - **Example**:
-    ```json
-    {
-        "error": "PhoneNumber is not the correct format"
-    }
-    ```
+```json
+{
+    "error": "PhoneNumber is not the correct format"
+}
+```
 
   #### Parameters
 
@@ -128,7 +127,7 @@
     - `addressType` (integer): 4 = Delivery Address
    - `equipment` (array of objects): Empty Array if none found
     - `equipmentId` (integer)
-    - `locationId` (integer)
+    - `locationId` (integer) - this is the addressId from the delivery address
     - `productId` (integer)
     - `productFormatted` (string)
     - `tankSize` (integer)

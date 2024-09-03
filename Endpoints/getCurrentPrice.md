@@ -12,52 +12,52 @@
 #### Request Body
 - **Format**: JSON
 - **Example**:
-    ```json
-    {
-      "brandType": 4,
-      "productId": 2
-    }
-    ```
+```json
+{
+    "brandType": 4,
+    "productId": 2
+}
+```
 
 #### Response
 - **Success**:
   - **Format**: JSON
   - **Example**:
-    ```json
-    {
-      "price": 3.455,
-      "cricePlanId": 855,
-      "murrency": "USD",
-      "minimumGallonsAllowed": 100,
-      "associatedFees": [
-		{
-		  "feeType": "RegulatoryComplianceFee",
-		  "feeAmount": 7.99
-		}
-	  ],
-      "tieredPricing": [
+```json
+{
+    "price": 3.455,
+    "cricePlanId": 855,
+    "murrency": "USD",
+    "minimumGallonsAllowed": 100,
+    "associatedFees": [
         {
-          "minGallons": 0,
-		  "maxGallons": 100,
-		  "price": 3.455
-		},
-		{
-		  "minGallons": 100,
-		  "maxGallons": 250,
-		  "price": 3.400
+	        "feeType": "RegulatoryComplianceFee",
+	        "feeAmount": 7.99
         }
-      ],
-      "error": ""
-    }
-    ```
+	],
+    "tieredPricing": [
+        {
+            "minGallons": 0,
+		    "maxGallons": 100,
+		    "price": 3.455
+	    },
+	    {
+		    "minGallons": 100,
+		    "maxGallons": 250,
+		    "price": 3.400
+        }
+    ],
+    "error": ""
+}
+```
 - **Error**:
   - **Format**: JSON
   - **Example**:
-    ```json
-    {
-      "error": "Invalid ProductId"
-    }
-    ```
+```json
+{
+    "error": "Invalid ProductId"
+}
+```
 
 #### Parameters
 - `brandType` (integer): The type of brand (e.g., 4 for Capitol City).

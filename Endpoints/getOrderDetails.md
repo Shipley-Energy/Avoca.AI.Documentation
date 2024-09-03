@@ -13,60 +13,61 @@
 #### Request Body
 - **Format**: JSON
 - **Example**:
-    ```json
-    {
-      "brandType": 4,
-      "productId": 2,
-      "gallons": 100,
-      "promoCode": "SHIPLEY123",
-    }
-    ```
+```json
+{
+    "brandType": 4,
+    "productId": 2,
+    "gallons": 100,
+    "promoCode": "SHIPLEY123",
+}
+```
 
 #### Response
 - **Success**:
   - **Format**: JSON
   - **Example**:
-    ```json
-    {
-      "orderTotal": 343.49,
-      "orderTotalPreDiscount": 352.99,
-      "pricePerGallon": 3.455,
-      "orderItems": [
-		{
-		  "itemName": "HeatingOil",
-          "itemId": 2,
-		  "itemDescription": "100 Gallons of Heating Oil",
-		  "itemPrice": 345.50
-		}, {
-          "itemName": "RegulatoryComplianceFee",
-          "itemId": 1552,
-		  "itemDescription": "RegulatoryComplianceFee",
-		  "itemPrice": 7.99
+```json
+{
+    "orderTotal": 343.49,
+    "orderTotalPreDiscount": 352.99,
+    "pricePerGallon": 3.455,
+    "orderItems": [
+        {
+	        "itemName": "HeatingOil",
+            "itemId": 2,
+	        "itemDescription": "100 Gallons of Heating Oil",
+	        "itemPrice": 345.50
+        }, {
+            "itemName": "RegulatoryComplianceFee",
+            "itemId": 1552,
+	        "itemDescription": "RegulatoryComplianceFee",
+	        "itemPrice": 7.99
         }
-	  ],
-      "promoDiscount": [
-		{
-		  "promoCode": "SHIPLEY123",
-		  "discountOffTotal": 0,
-          "discountOffPerGallon": 0.10
-		}
-	  ],
-      "error": ""
-    }
-    ```
+    ],
+    "promoDiscount": [
+        {
+	        "promoCode": "SHIPLEY123",
+	        "discountOffTotal": 0,
+            "discountOffPerGallon": 0.10
+        }
+    ],
+    "error": ""
+}
+```
+
 - **Error**:
   - **Format**: JSON
   - **Example**:
-    ```json
-    {
-      "orderTotal": 0,
-      "orderTotalPreDiscount": 0,
-      "pricePerGallon": 0,
-      "orderItems": [],
-      "promoDiscount": [],
-      "error": "Unable to complete request"
-    }
-    ```
+```json
+{
+    "orderTotal": 0,
+    "orderTotalPreDiscount": 0,
+    "pricePerGallon": 0,
+    "orderItems": [],
+    "promoDiscount": [],
+    "error": "Unable to complete request"
+}
+```
 
 #### Parameters
 - `brandType` (integer): The type of brand (e.g., 4 for Capitol City).

@@ -12,33 +12,34 @@
 #### Request Body
 - **Format**: JSON
 - **Example**:
-    ```json
-    {
-      "brandType": 4,
-      "zipCode": 17403, 
-      "productId": 2
-    }
-    ```
+```json
+{
+    "brandType": 4,
+    "zipCode": 17403, 
+    "productId": 2
+}
+```
 
 #### Response
 - **Success**:
   - **Format**: JSON
   - **Example**:
-    ```json
-    {
-      "successful": true
-      "message": ""
-    }
-    ```
+```json
+{
+    "successful": true
+    "message": ""
+}
+```
+
 - **Error**:
   - **Format**: JSON
   - **Example**:
-    ```json
-    {
-      "successful": false,
-      "message": "{BrandType} does not service Zip Code {ZipCode}"
-    }
-    ```
+```json
+{
+    "successful": false,
+    "message": "{BrandType} does not service Zip Code {ZipCode}"
+}
+```
 
 #### Parameters
 - `brandType` (integer): The brand type of the product.
