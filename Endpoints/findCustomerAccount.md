@@ -17,7 +17,8 @@
     "phoneNumber": "7177777777",
     "firstName": "Bob", 
     "lastName": "Jones", 
-    "emailAddress": "email@address.com"
+    "emailAddress": "email@address.com",
+    "productId": 2
 }
 ```
 
@@ -74,7 +75,6 @@
             "paymentProfileId": 92929292,
 		    "paymentProfileType": "Credit Card", 
 		    "paymentProfileName": "Visa", 
-		    "paymentProfileNumber": "************1234",
             "paymentProfileLast4": "1234", 
 		    "paymentProfileExpiration": "12/2022"
 	    }
@@ -98,6 +98,8 @@
   - `firstName` (string)(required): The First Name of the customer.
   - `lastName` (string)(required): The LastName of the customer.
   - `emailAddress` (string)(optional): the email address of the customer. This can help us find a customer easier.
+  - `brandType` (integer)(required): The brand type of the product.
+  - `productId` (integer)(required): The ID of the product.
 
 
   ##### Response Type

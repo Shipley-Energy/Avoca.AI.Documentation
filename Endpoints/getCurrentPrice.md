@@ -26,9 +26,10 @@
 ```json
 {
     "price": 3.455,
-    "cricePlanId": 855,
+    "pricePlanId": 855,
     "murrency": "USD",
     "minimumGallonsAllowed": 100,
+    "hasAvailablePromoCodes": true,
     "associatedFees": [
         {
 	        "feeType": "RegulatoryComplianceFee",
@@ -64,15 +65,16 @@
 - `productId` (integer): The ID of the product.
 
 #### Response
-- `price` (float)(nullable): The current price of the product. Will be null if tiered pricing is available.
+- `price` (decimal)(nullable): The current price of the product. Will be null if tiered pricing is available.
 - `pricePlanId` (integer): The ID of the price plan.
 - `currency` (string): The currency of the price.
 - `minimumGallonsAllowed` (integer): The minimum number of gallons allowed for the product.
+- `hasAvailablePromoCodes` (boolean): Indicates if there are available promo codes for the product.
 - `associatedFees` (array): An array of associated fees. Empty array if no fees exist.
   - `feeType` (string): The type of fee.
-  - `feeAmount` (float): The amount of the fee.
+  - `feeAmount` (decimal): The amount of the fee.
 - `tieredPricing` (array): An array of tiered pricing information. Empty if no tiered pricing is available.
   - `minGallons` (integer): The minimum number of gallons for the tier.
   - `maxGallons` (integer): The maximum number of gallons for the tier.
-  - `price` (float): The price for the tier.
+  - `price` (decimal): The price for the tier.
 - `error` (string): An error message if the request fails.
