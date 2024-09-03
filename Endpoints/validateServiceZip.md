@@ -16,7 +16,7 @@
     {
       "brandType": 4,
       "zipCode": 17403, 
-      "productId": 2"
+      "productId": 2
     }
     ```
 
