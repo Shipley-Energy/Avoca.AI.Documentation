@@ -38,7 +38,7 @@
 	        "itemDescription": "100 Gallons of Heating Oil",
 	        "itemPrice": 345.50
         }, {
-            "itemName": "RegulatoryComplianceFee",
+            "itemNameww: "RegulatoryComplianceFee",
             "itemId": 1552,
 	        "itemDescription": "RegulatoryComplianceFee",
 	        "itemPrice": 7.99

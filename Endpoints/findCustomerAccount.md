@@ -30,6 +30,7 @@
 {
     "customerNumber": 7577482, 
     "brandType": 4,
+    "requiresNewAccount": false,
     "contacts": [
         {
             "contactLocationId": 1442552,
@@ -69,10 +70,10 @@
         }
     ], 
     "customerPaymentProfile": {
-    "customerProfileId": 55555551,
+    "customerProfileId": "55555551",
     "paymentProfile": [
 	    {
-            "paymentProfileId": 92929292,
+            "paymentProfileId": "92929292",
 		    "paymentProfileType": "Credit Card", 
 		    "paymentProfileName": "Visa", 
             "paymentProfileLast4": "1234", 
@@ -105,6 +106,8 @@
   ##### Response Type
 
   - `customerNumber` (integer | null)(nullable): If found, customer number. Can be Null. Null = not found. 
+  - `brandType` (integer): The brand type of the product.
+  - `requiresNewAccount` (boolean): If true, the customer does not have an account and will need to create one.
   - `contact` (array of objects): Empty Array if none found
     - `contactLocationId` (integer)(nullable): Unique identifier to indicate a Contact's location 
     - `firstName` (string): First Name of contact
@@ -134,9 +137,9 @@
     - `productFormatted` (string)
     - `tankSize` (integer)
    - `customerPaymentProfile` (object)
-    - `customerProfileId` (integer): This is passed to Authorized.net to complete payment on an existing credit card. This will get created if a customer doesn't have one.
+    - `customerProfileId` (string): This is passed to Authorized.net to complete payment on an existing credit card. This will get created if a customer doesn't have one.
     - `paymentProfile` (array of objects)(nullable): This can will be an empty array if a customer doesn't have any profiles.
-  - `paymentProfileId` (integer)
+  - `paymentProfileId` (string)
   - `paymentProfileType` (string)
   - `paymentProfileName` (string)
   - `paymentProfileNumber` (string)
