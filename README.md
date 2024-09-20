@@ -26,3 +26,4 @@ Provide a general overview of the API, including its purpose and any important d
 - **Api Login must be called before any other endpoint. The APIKey will be used in the header for all other requests.**
 - Ensure the API key is valid and included in the header.
 - The `BrandType` is the current Brand for the Order.
+- Product Id will be `2` for Heating Oil  

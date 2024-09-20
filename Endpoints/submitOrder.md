@@ -17,6 +17,7 @@
 {
     "brand": 4,
     "pricePlanId": 855,
+    "productId": 2,
     "firstName": "John",
     "lastName": "Doe",  
     "billingAddress": {
@@ -97,6 +98,7 @@
 
 - `brand` (integer)(nullable): The brand type of the product.
 - `pricePlanId` (integer)(nullable): The ID of the price plan.
+- `productId` (integer): The ID of the product.
 - `firstName` (string): The first name of the customer.
 - `lastName` (string): The last name of the customer.
 - `billingAddress` (object)(nullable): The billing address of the customer.
